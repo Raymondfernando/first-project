@@ -9,7 +9,7 @@ public interface ProductsDao {
 
 	void delete(int id);
 
-	Products findById(String id);
+	Products findById(int id);
 
 	List<Products> findAll();
 }

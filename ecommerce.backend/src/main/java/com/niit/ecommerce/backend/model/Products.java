@@ -13,20 +13,20 @@ public class Products {
 	@Id
 	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String id;
+	private int id;
 	private String cid;
 	private String pname;
 	private String sid;
 	private String pdesc;
 	private String pquantity;
 	private String pprice;
-	private byte[] pimage;
+	private String pimage;
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -79,11 +79,11 @@ public class Products {
 		
 	}
 
-	public byte[] getPimage() {
+	public String getPimage() {
 		return pimage;
 	}
 
-	public void setPimage(byte[] pimage) {
+	public void setPimage(String pimage) {
 		this.pimage = pimage;
 	}
 	

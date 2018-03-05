@@ -57,6 +57,7 @@ public class HibernateConfiguration {
 		sessionBuilder.addAnnotatedClass(Supplier.class);// maps the class with table
 		sessionBuilder.addAnnotatedClass(Products.class);// maps the class with table
 
+
 		return sessionBuilder.buildSessionFactory();
 	}
 }

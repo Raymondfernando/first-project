@@ -45,6 +45,7 @@ public class ProductsImpl implements ProductsDao {
 		/*
 		 * session.getTransaction().commit(); session.close();
 		 */
+		
 		if (!list.isEmpty()) {
 			return (Products) list.get(0);
 		} else {
@@ -62,14 +63,5 @@ public class ProductsImpl implements ProductsDao {
 		// session.getTransaction().commit();
 		return results;
 	}
-
-	public Products findById(String id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	/*public Products findById(String id) {
-		// TODO Auto-generated method stub
-		return null;
-	}*/
 }
+
